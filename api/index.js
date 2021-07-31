@@ -31,9 +31,11 @@ async function redact(event, response) {
   ) {
     response.status(200).send({
       type: 4,
-      content:
-        'You need the Manage Messages permission in order to use this command! Please contact a Mod or Admin to help you.',
-      flags: 64,
+      data: {
+        content:
+          'You need the Manage Messages permission in order to use this command! Please contact a Mod or Admin to help you.',
+        flags: 64,
+      },
     });
     return;
   }
