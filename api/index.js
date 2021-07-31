@@ -27,7 +27,8 @@ async function redact(event, response) {
 
   if (
     !has(member.permissions, ADMINISTRATOR) &&
-    !has(member.permissions, MANAGE_MESSAGES)
+    !has(member.permissions, MANAGE_MESSAGES) &&
+    member.id !== message.author.id
   ) {
     response.status(200).send({
       type: 4,
