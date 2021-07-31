@@ -1,0 +1,27 @@
+{
+  "name": "redacted-bot",
+  "version": "1.0.0",
+  "description": "Reposts a marked message with spoilers",
+  "main": "api/index.js",
+  "scripts": {
+    "start": "node -r dotenv/config index.js",
+    "register": "node -r dotenv/config register.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ianmitchell/redacted-bot.git"
+  },
+  "author": "Ian Mitchell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ianmitchell/redacted-bot/issues"
+  },
+  "homepage": "https://github.com/ianmitchell/redacted-bot",
+  "dependencies": {
+    "dedent": "^0.7.0",
+    "discord-interactions": "^2.0.2",
+    "dotenv": "^8.2.0",
+    "node-fetch": "^2.6.1",
+    "raw-body": "^2.4.1"
+  }
+}
